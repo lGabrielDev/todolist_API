@@ -270,6 +270,7 @@ For each operation, we show all the possible responses
 ### Requirements
 - [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - [PostgreSQL 16](https://www.postgresql.org/download/)
+- [git 2.34.1](https://git-scm.com/download)
 
 <br>
 
