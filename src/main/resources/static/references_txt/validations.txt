@@ -1,0 +1,179 @@
+======================================== 'Person' validations: =============================================================
+
+============== CREATE ==============
+	'username' attribute:
+		- username cannot be null
+		- username cannot have white space
+		- username must have between 5 e 20 characters
+		- username must to be unique
+
+
+	'password' attribute:
+		- password cannot be null
+		- password must have between 8 and 20 characters
+		- password cannot have white spaces
+		- password must have at least 1 uppercase letter
+		- password must have at least 1 number
+		- password must have 2 special characters
+
+============== READ ALL ==============
+	- only persons with "ADMIN" role could access this endpoint. Otherwise, will receive a 403 - Forbidden
+
+
+
+============== GIVE ADMIN PERMISSIONS ==============
+	- only persons with "ADMIN" role could access this endpoint. Otherwise, will receive a 403 - Forbidden
+	- person not found 404 CHECK
+	- person already has admin role CHECK
+
+
+
+
+	
+
+======================================== 'Tasks' validations: =============================================================
+
+============== CREATE ==============
+
+	1. "title"
+		- title cannot be null
+		- title must have between 1 and 50 characters
+		- title must to be unique
+	
+
+
+	2. "description"
+		- description cannot be null and must have between 0 and 100 characters
+
+
+
+	3. "priority
+		- priority cannot be null
+		- priority must be between 1 and 3
+		- priority cannot be a String
+
+
+	4. "category_id
+		- category_id cannot be null
+		- category_id cannot be a String
+		- cannot pass a category_id from another person
+		- category_id doesn't exists
+
+
+
+
+============== READ ALL ==============
+	
+	===== 1. without filter:
+			- a user can only read your own tasks CHECK
+			- that list is order by: CHECK
+				- "priority" DESC
+				- "id" ASC
+
+
+
+	===== 2. filtered by 'priority':
+		- we check if the RequestParam is an Integer CHECK
+
+	===== 3. filtered by 'completed:
+		- we check if the RequestParam is an Boolean CHECK
+
+	===== 4. filtered by 'title' like CHECK
+
+
+
+
+============== UPDATE ==============
+	- task not found CHECK
+	- you cannot update a task_id from another person CHECK
+	
+
+	1. "title"
+		if it is differente of null, we validate as we did before on create
+			- title must have between 1 and 50 characters
+			- title must to be unique
+	
+
+	2. "description"
+		if it is differente of null, we validate as we did before on create
+			- description cannot be null and must have between 0 and 100 characters
+
+
+
+	3. "priority
+		if it is differente of null, we validate as we did before on create
+			- priority must be between 1 and 3
+			- priority cannot be a String
+
+
+	4. "completed"
+
+		.... nothing to validate
+
+
+	5. "category_id"
+		if it is differente of null, we validate as we did before on create
+			- category_id cannot be a String
+			- doesn't exists CHECK
+			- cannot pass a category_id from another person
+
+
+
+
+============== DELETE task ==============
+		- task doesn't exists CHECK
+		- task is from another person CHECK
+
+
+
+
+======================================== 'Category' validations: =============================================================
+============== CREATE ==============
+	1. 'name':
+		- name cannot be null
+		- name must have betweem 1 and 20 characters
+		- name must be unique
+	
+
+
+
+============== UPDATE ==============
+	1. 'name':
+		- check if the categoryId exists
+		- check if the category is from the authenticated person
+		- if is null, we dont change CHECK
+		- name must have between 1 and 20 characters
+		- name must be unique
+
+
+
+
+============== READ ==============
+// read all
+	- List all categories from the authenticated person CHECK
+
+
+// read one
+	- you cannot read a category because that category doesn't exists CHECK
+	- you cannot read a category from another person CHECK
+	- if it is all good, we show all tasks from a specific category CHECK
+
+
+
+
+
+============== DELETE ==============
+	- task doesn't exists CHECK
+	- cannot delete a category from another person CHECK
+	- cannot delete a category that contains tasks on in. First, we need to delete those tasks. CHECK
+
+
+
+
+
+
+
+
+
+
+

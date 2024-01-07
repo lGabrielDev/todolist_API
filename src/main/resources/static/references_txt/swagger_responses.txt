@@ -1,0 +1,85 @@
+======================================== 'Person' controller: =============================================================
+
+============== READ ALL ==============
+	- 200 OK - List of all persons
+	- 401 UNAUTHORIZED - username and password are wrong
+	- 403 Forbidden only persons with "ADMIN" role could access this endpoint
+
+
+============== GIVE ADMIN PERMISSIONS ==============
+	- 200 OK - admin authority given sucessfully
+	- 401 UNAUTHORIZED - username and password are wrong
+	- 403 Forbidden - only persons with "ADMIN" role could access this endpoint
+	- 404 NOT_FOUND - category #ID does not exists in our database
+	- 417 Expectation Failed - person already has the admin authority
+
+
+============== CREATE PERSON ==============
+	- 201 CREATED
+	- 409 CONFLICT - username or password is wrong
+
+
+
+======================================== 'Category' controller: =============================================================
+============== READ ALL ==============
+	- 200 OK
+	- 401 Unauthorized
+
+
+============== READ ONE ==============
+	- 200 OK - read a particular category
+	- 401 UNAUTHORIZED - username and password are wrong
+	- 404 NOT_FOUND - category #ID does not exists in our database
+	- 406 NOT_ACCEPTABLE - category is from another person
+
+
+============== UPDATE ==============
+	- 200 OK - category updated successfully
+	- 401 UNAUTHORIZED - username and password are wrong
+	- 404 NOT_FOUND - category #ID does not exists in our database
+	- 406 NOT ACCEPTABLE - category is from another person
+	- 409 CONFLICT - category name is wrong
+
+
+============== DELETE ==============
+	- 200 OK - category deleted successfully
+	- 401 UNAUTHORIZED - username and password are wrong
+	- 404 NOT_FOUND - category #ID does not exists in our database
+	- 406 NOT_ACCEPTABLE - category is from another person
+	- 417 EXPECTATION_FAILED - cannot delete a category that contains tasks on it
+
+
+============== CREATE ==============
+	- 201 CREATED - category successfully
+	- 401 UNAUTHORIZED - username and password are wrong
+	- 409 CONFLICT - category name is wrong
+
+
+
+======================================== 'Task' controller: =============================================================
+============== DELETE ==============
+	- 200 OK - task deleted successfully
+	- 401 UNAUTHORIZED - username and password are wrong
+	- 404 NOT_FOUND - task_id does not exists in our database
+	- 406 NOT_ACCEPTABLE - task is from another person
+
+
+============== READ ALL ==============
+	- 200 OK
+	- 401 UNAUTHORIZED - username and password are wrong
+
+
+============== CREATE ==============
+	- 201 CREATED - task successfully
+	- 401 UNAUTHORIZED - username and password are wrong
+	- 409 CONFLICT - some attribute receive a wrong value
+
+
+============== UPDATE ==============
+	- 200 OK - task updated successfully
+	- 401 UNAUTHORIZED - username and password are wrong
+	- 404 NOT_FOUND - category #ID does not exists in our database
+	- 406 NOT ACCEPTABLE - task is from another person
+	- 409 CONFLICT - some attribute receive a wrong value
+	
+

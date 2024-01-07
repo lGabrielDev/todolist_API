@@ -25,7 +25,7 @@ This is a TodoList API designed for managing your daily tasks. The objetive here
 ### How the API works
 1. User will create an account (authentication).
 2. User will create a category.
-3. After those 2 steps, the user can start to create his own tasks and manage them.
+3. After those 2 steps, the user can start to create their own tasks and manage them.
 
 <hr>
 <br>
@@ -40,6 +40,7 @@ This is a TodoList API designed for managing your daily tasks. The objetive here
 - PostgreSQL Driver
 - OpenAPI (Swagger)
 - Spring Security
+- Mockito and AssertJ
 
 <hr>
 <br>
@@ -48,9 +49,9 @@ This is a TodoList API designed for managing your daily tasks. The objetive here
 ## <img src="https://cdn2.iconfinder.com/data/icons/75-market-research-wildberry-vol-1/256/Guideline-256.png" alt="todo list image icon" width="40px" align="center"> Functionalities:
 
 - [x] Entities Relatioship
-- [x] Authentication (Basic Auth).
+- [x] Authentication (Basic Auth)
 - [x] Create, Read, Update and Delete tasks
-- [x] Attributes validations
+- [x] Attributes validation
 - [x] Custom Exception Handler
 - [x] Unit Tests, with AssertJ and Mockito
 - [x] Swagger documentation
@@ -85,7 +86,7 @@ Our basic authentication works with 2 roles:
 
 <br>
 
-- **ADMIN** -> Special authority, that allowed a user to access sensitive endpoints. By default, the application going to create a user called "admin" with a password "123". That 'default admin account' will be the responsable to give the admin authority to a regular user. After you have a user with admin authority, you dont need to use that 'default admin account' anymore.
+- **ADMIN** -> Special authority that allowed a user to access sensitive endpoints. By default, the application going to create a user called "admin" with a password "123". That 'default admin account' will be the responsable to give the admin authority to a regular user. After you have a user with admin authority, you dont need to use that 'default admin account' anymore.
 
 Working with users and roles, we can assert that users can only manipulate their own tasks. Not allowed to access informations about others users tasks.
 
@@ -316,7 +317,7 @@ For each operation, we show all the possible responses
 <br>
 
 <div>
-    <span>For more detailed informations, watch our tutorial video here:</span>
+    <span>For more detailed informations, watch our tutorial video here</span>
     <a href="#">
         <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-256.png" alt="video icon" width="30px" align="center">
     </a>
