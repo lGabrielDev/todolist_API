@@ -1,24 +1,26 @@
+<!-- title -->
 <h1 align="center">
     <span>Todo List API</span>
     <img src="./src/main/resources/static/img/readme/todo_list_h1_image.svg" alt="todo list image icon" width="400px" align="center">
 </h1>
 
 
+<!-- languages -->
 <div align="right">
     <span><em>language</em></span>
+    <!-- BR -->
     <a href="#">
         <img src="https://cdn.icon-icons.com/icons2/83/PNG/512/brazil_15818.png" alt="brazil flag icon" width="20x" align="center">
     </a>
+    <!-- US -->
     <a href="#">
-        <img src="https://cdn.icon-icons.com/icons2/3665/PNG/512/usa_flag_united_states_america_icon_228698.png" alt="brazil flag icon" width="20px" align="center">
+        <img src="https://cdn.icon-icons.com/icons2/3665/PNG/512/usa_flag_united_states_america_icon_228698.png" alt="america flag icon" width="20px" align="center">
     </a>
 </div>
 
-
+<!-- About -->
 ## <img src="https://cdn2.iconfinder.com/data/icons/flat-pack-1/64/Computer-512.png" alt="todo list image icon" width="40px" align="center"> About the project
 This is a TodoList API designed for managing your daily tasks. The objetive here is practice the CRUD operations, using as background a todolist.
-
-
 
 ### How the API works
 1. User will create an account (authentication).
@@ -28,10 +30,8 @@ This is a TodoList API designed for managing your daily tasks. The objetive here
 <hr>
 <br>
 
-
-
-
-## <img src="https://cdn1.iconfinder.com/data/icons/business-and-commercial-mixed-round/128/4-256.png" alt="todo list image icon" width="40px" align="center"> Technologies
+<!-- Technologies -->
+## <img src="https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_48-256.png" alt="todo list image icon" width="40px" align="center"> Technologies
 - Java
 - Maven
 - Spring Boot
@@ -44,9 +44,8 @@ This is a TodoList API designed for managing your daily tasks. The objetive here
 <hr>
 <br>
 
-
-
-## <img src="https://cdn1.iconfinder.com/data/icons/business-and-commercial-mixed-round/128/4-256.png" alt="todo list image icon" width="40px" align="center"> Functionalities:
+<!-- Functionalities -->
+## <img src="https://cdn2.iconfinder.com/data/icons/75-market-research-wildberry-vol-1/256/Guideline-256.png" alt="todo list image icon" width="40px" align="center"> Functionalities:
 
 - [x] Entities Relatioship
 - [x] Authentication (Basic Auth).
@@ -56,26 +55,24 @@ This is a TodoList API designed for managing your daily tasks. The objetive here
 - [x] Unit Tests, with AssertJ and Mockito
 - [x] Swagger documentation
 
-
 <br>
 <hr>
 
-### <img src="https://icon-library.com/images/data-model-icon/data-model-icon-15.jpg" alt ="image icon" width="40px" align="center"> Entities Relationship Diagram
+<!-- Diagram -->
+### <img src="https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/flow_chart-512.png" alt ="image icon" width="40px" align="center"> Entities Relationship Diagram
 
-![entities relationship diagram](./src/main/resources/static/img/readme/entities_relationship_diagram.png)
-
-As we saw above, the application works with 4 entities:
+The application works with 4 entities:
 - User
-- Role (*ADMIN, REGULAR_USER*)
+- Role (*ADMIN*, *REGULAR_USER*)
 - Category
 - Tasks
 
+![entities relationship diagram](./src/main/resources/static/img/readme/entities_relationship_diagram.png)
+
 <hr>
 <br>
 
-
-
-
+<!-- Authentication -->
 ### <img src="https://cdn3.iconfinder.com/data/icons/business-startup-57/64/289-512.png" alt ="image icon" width="40px" align="center"> Authentication (Basic Auth)
 When we are talking about 'basic auth', we are talking about **users** and **roles**.
 
@@ -113,7 +110,6 @@ Working with users and roles, we can assert that users can only manipulate their
 <hr>
 <br>
 
-
 ## <img src="https://cdn1.iconfinder.com/data/icons/internet-45/64/http-link-internet-domain-1024.png" alt ="image icon" width="40px" align="center"> Endpoints
 
 ### Person Controller
@@ -135,7 +131,6 @@ Working with users and roles, we can assert that users can only manipulate their
 | PUT            | `http://localhost:8080/v1/api/category/{id}`  | Update a category          | REGULAR_USER     |
 | DELETE         | `http://localhost:8080/v1/api/category/{id}`  | Delete a category          | REGULAR_USER     |
 
-
 <br>
 
 ### Task Controller
@@ -146,16 +141,6 @@ Working with users and roles, we can assert that users can only manipulate their
 | PUT            | `http://localhost:8080/v1/api/task/{id}`           | Upadte a task          | REGULAR_USER     |
 | DELETE         | `http://localhost:8080/v1/api/task/{id}`           | Delete a task          | REGULAR_USER     |
 
-
-
-
-
-
-
-
-
-
-
 <br>
 
 ⚠️ As you saw above, the only endpoint you can access without any authentication is the endpoint to create a user. To access all the others endpoints you need to be authenticated. Otherwise, you will get a 401 - Unauthorized.
@@ -163,7 +148,7 @@ Working with users and roles, we can assert that users can only manipulate their
 <hr>
 <br>
 
-
+<!-- Validations -->
 ## <img src="https://cdn4.iconfinder.com/data/icons/rating-validation-3/128/validation_stamp_approval_approve_check-512.png" alt ="image icon" width="40px" align="center"> Validations
 To avoid any input problem, all the attributes were validated.
 
@@ -189,14 +174,12 @@ The validations that were implemented are:
 		6. password must have 2 special characters
 <br>
 
-
 ### Category input validations
 - **CREATE**
     - 'name' attribute
         1. name cannot be null
         2. name must have betweem 1 and 20 characters
         3. cannot have categories with the same name
-
 <br>
 
 - **UPDATE**
@@ -212,26 +195,22 @@ The validations that were implemented are:
         1. title cannot be null
         2. title must have between 1 and 50 characters
         3. title must to be unique
-    
     <br>
 
     - 'description' attribute
         1. description cannot be null and must have between 0 and 100 characters
-    
     <br>
 
     - 'priority' attribute
         1. priority cannot be null
 		2. priority must be between 1 and 3
 		3. priority cannot be a String
-
     <br>
 
      - 'category_id' attribute
         1. category_id cannot be null
         2. category_id cannot be a String
         3. cannot pass a category_id from another person
-
 	<br>
 
 - **UPDATE**
@@ -258,11 +237,10 @@ The validations that were implemented are:
 <hr>
 <br>
 
+<!-- Custom Exception Handler -->
 ## <img src="https://cdn4.iconfinder.com/data/icons/common-app-symbols-round-colored/1024/caveat_proviso_disclaimer_exception_app_round_colored-512.png" alt ="image icon" width="40px" align="center"> Custom Exception Handler
 
-
-
-All exceptions were customized for a better user understanding
+All the exceptions were customized for a better user understanding
 
 **Example 1**
 ![information from other person image example](./src/main/resources/static/img/readme/username_wrong_example.png)	
@@ -277,21 +255,16 @@ All exceptions were customized for a better user understanding
 
 ![information from other person image example](./src/main/resources/static/img/readme/swagger_documentation.png)	
 
-
 <br>
 
 For each operation, we show all the possible responses
 ![information from other person image example](./src/main/resources/static/img/readme/swagger_possible_responses.png)	
 
-
 <hr>
 <br>
 
-
-
+<!-- Build and run -->
 ## <img src="https://cdn3.iconfinder.com/data/icons/start-up-4/44/rocket-256.png" alt="todo list image icon" width="40px" align="center"> Build and run
-
-
 
 ### Requirements
 - [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
@@ -303,33 +276,74 @@ For each operation, we show all the possible responses
 
 1. Clone the repository in a local repository
     ```bash
-    git clone git@github.com:lGabrielDev/backend-todolist-project.git;
+    git clone git@github.com:lGabrielDev/todolist_backend.git
     ```
 <br>
 
-2. Run the application and access the swagger endpoint: `http://localhost:8080/swagger-ui/index.html`
+2. Setup the application.properties:
+
+    ```properties
+    # Database path
+    spring.datasource.url=jdbc:postgresql://localhost:5432/your_database
+
+    # postgres username
+    spring.datasource.username=yourPostgresUsername
+
+    # postgres password
+    spring.datasource.password=yourPostgresPassword
+
+    # Every time we update a entity, the reference table will update as well
+    spring.jpa.hibernate.ddl-auto=update
+
+    # Show the SQL commands
+    spring.jpa.show-sql=true
+
+    # Swagger sorted operations
+    springdoc.swagger-ui.operationsSorter=method
+    ```
+<br>
+
+3. Run the application and access the endpoint: `http://localhost:8080/swagger-ui/index.html`
 
 <br>
 
-3. Create a 'user/person'
+4. Create a user
 
-4. Create a category
+5. Create a category
 
-5. Create your taks
+6. Create your taks and have fun! 😎
+
+<br>
+
+<div>
+    <span>For more detailed informations, watch our tutorial video here:</span>
+    <a href="#">
+        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-256.png" alt="video icon" width="30px" align="center">
+    </a>
+</div>
+
+<hr>
+<br>
+
+<!-- License -->
+## <img src="https://cdn4.iconfinder.com/data/icons/jetflat-2-multimedia-vol-3/60/0042_049_license_agreement_file_document_paper_page_sheet-512.png" alt="todo list image icon" width="40px" align="center"> License --> MIT
+
+This project is under the [MIT](https://opensource.org/license/mit/) license.
+
+<hr>
+<br>
+
+<!-- Author -->
+## <img src="https://cdn1.iconfinder.com/data/icons/office-work-3/200/copywriting-512.png" alt="todo list image icon" width="40px" align="center"> Author
+
+<br>
 
 
-To more detailed information, we have a tutorial video here: [youtube video]()
-
-
-## used dependencies:
-
-
-
-## License --> MIT
-
-
-## author - > link para seu github
-
-
-EXPLICANDO COMO A APLICACO FUNCIONA, QUE VOCE PRECISAR CRIAR UM USUARIO E ESSE USAUIO JA RECEBE A REGULAR_ROLE ETC....
+<div align="center">
+    <img src="./src/main/resources/static/img/readme/profile_avatar.png" alt="profile avatar" width="150px">
+    <p>
+        <a href="https://github.com/lGabrielDev">Gabriel Freitas</a> 😎
+    </p>
+    
+</div>
 
