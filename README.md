@@ -9,7 +9,7 @@
 <div align="right">
     <span><em>language</em></span>
     <!-- BR -->
-    <a href="#">
+    <a href="./src/main/resources/static/README_pt_br.md">
         <img src="https://cdn.icon-icons.com/icons2/83/PNG/512/brazil_15818.png" alt="brazil flag icon" width="20x" align="center">
     </a>
     <!-- US -->
@@ -82,7 +82,7 @@ All the endpoints are restricted and need to receive a credential to be accessed
 
 Our basic authentication works with 2 roles:
 
-- **REGULAR_USER** -> As the name suggest, it is a normal/regular authority. By default, everytime a user is created, that new user receive the REGULAR_USER authority.
+- **REGULAR_USER** -> As the name suggest, it is a normal/regular authority. By default, everytime a user is created, that new user receives the REGULAR_USER authority.
 
 <br>
 
@@ -144,7 +144,7 @@ Working with users and roles, we can assert that users can only manipulate their
 
 <br>
 
-⚠️ As you saw above, the only endpoint you can access without any authentication is the endpoint to create a user. To access all the others endpoints you need to be authenticated. Otherwise, you will get a 401 - Unauthorized.
+⚠️ As you saw above, the only endpoint you can access without any authentication is the endpoint to create a user. To access all the others endpoints, you need to be authenticated. Otherwise, you will get a 401 - Unauthorized.
 
 <hr>
 <br>
@@ -318,8 +318,8 @@ For each operation, we show all the possible responses
 <br>
 
 <div>
-    <span>For more detailed informations, watch our tutorial video here</span>
-    <a href="#">
+    <span>For more detailed informations, watch the tutorial video here</span>
+    <a href="https://www.youtube.com/watch?v=zfVaIbUv8nU&ab_channel=lGabrielDev">
         <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-256.png" alt="video icon" width="30px" align="center">
     </a>
 </div>
@@ -342,7 +342,7 @@ This project is under the [MIT](https://opensource.org/license/mit/) license.
 
 
 <div align="center">
-    <img src="./src/main/resources/static/img/readme/profile_avatar.png" alt="profile avatar" width="150px">
+    <img src="./src/main/resources/static/img/readme/profile_circular.png" alt="profile avatar" width="150px">
     <p>
         <a href="https://github.com/lGabrielDev">Gabriel Freitas</a> 😎
     </p>
