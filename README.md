@@ -319,7 +319,7 @@ For each operation, we show all the possible responses
 
 <div>
     <span>For more detailed informations, watch the tutorial video here</span>
-    <a href="https://www.youtube.com/watch?v=zfVaIbUv8nU&ab_channel=lGabrielDev">
+    <a href="https://www.youtube.com/watch?v=IGdVJ5rxb6o&ab_channel=lGabrielDev">
         <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-256.png" alt="video icon" width="30px" align="center">
     </a>
 </div>
