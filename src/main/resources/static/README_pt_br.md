@@ -4,6 +4,12 @@
     <img src="./img/readme/todo_list_h1_image.svg" alt="todo list image icon" width="400px" align="center">
 </h1>
 
+<!-- badges -->
+<div align="left">
+    <img src="https://img.shields.io/badge/license-MIT-yellow" alt="badge icon"></img>
+    <img src="https://img.shields.io/badge/version-1.0-green" alt="badge icon"></img>
+    <img src="https://img.shields.io/badge/repo size-5.15 MB-orange" alt="badge icon"></img>
+</div>
 
 <!-- languages -->
 <div align="right">
@@ -47,7 +53,7 @@ Essa é uma todolist criada para manipular tarefas diárias. O Objetivo aqui é 
 <br>
 
 <!-- Functionalities -->
-## <img src="https://cdn2.iconfinder.com/data/icons/75-market-research-wildberry-vol-1/256/Guideline-256.png" alt="todo list image icon" width="40px" align="center"> Funcionalidades:
+## <img src="https://cdn2.iconfinder.com/data/icons/75-market-research-wildberry-vol-1/256/Guideline-256.png" alt="todo list image icon" width="40px" align="center"> Funcionalidades
 
 - [x] Relacionamento entre Entidades
 - [x] Autenticação (Basic Auth)
@@ -145,9 +151,7 @@ Trabalhando com usuários e cargos, nós garantimos que usuários consigam manip
 
 <br>
 
-
 ⚠️ Como voce pode perceber acima, a única rota que você consegue acessar sem precisar de autenticação é a rota para criar um novo usuário. Para acessar qualquer outra rota, você precisa estar autenticado. Caso contrário, você irá receber o erro 401 - Unauthorized.
-
 
 <hr>
 <br>
@@ -175,7 +179,6 @@ As validações implementadas foram:
 		4. password deve possuir pelo menos 1 letra MAIÚSCULA
 		5. password deve possuir pelo menos 1 número
 		6. password deve ter pelo menos 2 caraceteres especiais ('!', '@', '#' '=', etc...)
-
 <br>
 
 ### Validações de input da entidade (Category)
@@ -348,11 +351,7 @@ O projeto está sob a licença do [MIT](https://opensource.org/license/mit/).
 
 <br>
 
-
 <div align="center">
     <img src="./img/readme/profile_circular.png" alt="profile avatar" width="150px">
-    <p>
-        <a href="https://github.com/lGabrielDev">Gabriel Freitas</a> 😎
-    </p>
-    
+    <p> <a href="https://github.com/lGabrielDev">Gabriel Freitas</a> 😎 </p>
 </div>
