@@ -334,7 +334,7 @@ For each operation, we show all the possible responses
     <span>License</span>
     <img src="https://cdn4.iconfinder.com/data/icons/jetflat-2-multimedia-vol-3/60/0042_049_license_agreement_file_document_paper_page_sheet-512.png" alt="todo list image icon" width="40px" align="center">
 </h2>
-<p>This project is under the <a href="https://opensource.org/license/mit/"> MIT </a> license.</p>
+<p>This project is under the <a href="./LICENSE.txt"> MIT </a> license.</p>
 
 <hr>
 <br>

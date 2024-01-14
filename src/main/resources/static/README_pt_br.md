@@ -341,7 +341,7 @@ For each operation, we show all the possible responses
 <!-- License -->
 ## <img src="https://cdn4.iconfinder.com/data/icons/jetflat-2-multimedia-vol-3/60/0042_049_license_agreement_file_document_paper_page_sheet-512.png" alt="todo list image icon" width="40px" align="center"> Licença --> MIT
 
-O projeto está sob a licença do [MIT](https://opensource.org/license/mit/).
+O projeto está sob a licença do [MIT](../../../../LICENSE.txt).
 
 <hr>
 <br>
