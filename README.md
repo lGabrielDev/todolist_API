@@ -321,25 +321,29 @@ For each operation, we show all the possible responses
 6. Create your taks and have fun! 😎
 
 <br>
-
 <div>
     <span>For more detailed informations, watch the tutorial video here</span>
     <a href="https://www.youtube.com/watch?v=IGdVJ5rxb6o&ab_channel=lGabrielDev">
         <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-256.png" alt="video icon" width="30px" align="center">
     </a>
 </div>
-
 <hr>
 <br>
 <!-- License -->
-## <img src="https://cdn4.iconfinder.com/data/icons/jetflat-2-multimedia-vol-3/60/0042_049_license_agreement_file_document_paper_page_sheet-512.png" alt="todo list image icon" width="40px" align="center"> License --> MIT
-
-This project is under the [MIT](https://opensource.org/license/mit/) license.
+<h2>
+    <span>License</span>
+    <img src="https://cdn4.iconfinder.com/data/icons/jetflat-2-multimedia-vol-3/60/0042_049_license_agreement_file_document_paper_page_sheet-512.png" alt="todo list image icon" width="40px" align="center">
+</h2>
+<p>This project is under the <a href="https://opensource.org/license/mit/"> MIT </a> license.</p>
 
 <hr>
 <br>
 <!-- Author -->
-## <img src="https://cdn1.iconfinder.com/data/icons/office-work-3/200/copywriting-512.png" alt="todo list image icon" width="40px" align="center"> Author
+<h2>
+	<img src="https://cdn1.iconfinder.com/data/icons/office-work-3/200/copywriting-512.png" alt="todo list image icon" width="40px" align="center">
+	<span>Author</span>
+</h2>
+
 
 <br>
 <div align="center">
