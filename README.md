@@ -4,6 +4,12 @@
     <img src="./src/main/resources/static/img/readme/todo_list_h1_image.svg" alt="todo list image icon" width="400px" align="center">
 </h1>
 
+<!-- badges -->
+<div align="left">
+    <img src="https://img.shields.io/badge/license-MIT-yellow" alt="badge icon"></img>
+    <img src="https://img.shields.io/badge/version-1.0-green" alt="badge icon"></img>
+    <img src="https://img.shields.io/badge/repo size-5.15 MB-orange" alt="badge icon"></img>
+</div>
 
 <!-- languages -->
 <div align="right">
@@ -46,7 +52,7 @@ This is a TodoList API designed for managing your daily tasks. The objetive here
 <br>
 
 <!-- Functionalities -->
-## <img src="https://cdn2.iconfinder.com/data/icons/75-market-research-wildberry-vol-1/256/Guideline-256.png" alt="todo list image icon" width="40px" align="center"> Functionalities:
+## <img src="https://cdn2.iconfinder.com/data/icons/75-market-research-wildberry-vol-1/256/Guideline-256.png" alt="todo list image icon" width="40px" align="center"> Functionalities
 
 - [x] Entities Relatioship
 - [x] Authentication (Basic Auth)
@@ -76,7 +82,6 @@ The application works with 4 entities:
 <!-- Authentication -->
 ### <img src="https://cdn3.iconfinder.com/data/icons/business-startup-57/64/289-512.png" alt ="image icon" width="40px" align="center"> Authentication (Basic Auth)
 When we are talking about 'basic auth', we are talking about **users** and **roles**.
-
 
 All the endpoints are restricted and need to receive a credential to be accessed. Besides that, the user need to have a particular authority as well.
 
@@ -326,7 +331,6 @@ For each operation, we show all the possible responses
 
 <hr>
 <br>
-
 <!-- License -->
 ## <img src="https://cdn4.iconfinder.com/data/icons/jetflat-2-multimedia-vol-3/60/0042_049_license_agreement_file_document_paper_page_sheet-512.png" alt="todo list image icon" width="40px" align="center"> License --> MIT
 
@@ -334,18 +338,11 @@ This project is under the [MIT](https://opensource.org/license/mit/) license.
 
 <hr>
 <br>
-
 <!-- Author -->
 ## <img src="https://cdn1.iconfinder.com/data/icons/office-work-3/200/copywriting-512.png" alt="todo list image icon" width="40px" align="center"> Author
 
 <br>
-
-
 <div align="center">
     <img src="./src/main/resources/static/img/readme/profile_circular.png" alt="profile avatar" width="150px">
-    <p>
-        <a href="https://github.com/lGabrielDev">Gabriel Freitas</a> 😎
-    </p>
-    
+    <p> <a href="https://github.com/lGabrielDev">Gabriel Freitas</a> 😎</p>
 </div>
-
