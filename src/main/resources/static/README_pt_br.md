@@ -269,7 +269,7 @@ Todas as exceções foram personalizadas para um melhor entendimento do usuário
 
 <br>
 
-For each operation, we show all the possible responses
+Para cada operação, é mostrado todas as possíveis respostas
 ![information from other person image example](./img/readme/swagger_possible_responses.png)	
 
 <hr>
