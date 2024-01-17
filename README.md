@@ -329,23 +329,43 @@ For each operation, we show all the possible responses
 </div>
 <hr>
 <br>
+
+<!-- Credits -->
+<h2>
+    <img src="https://cdn4.iconfinder.com/data/icons/thank-you/256/Artboard_4_copy-512.png" alt="thumbs up icon image" width="40px" align="center">
+    <span>Credits</span>
+</h2>
+<span>The images used in this project were sourced from the following websites:</span>
+
+- [storyset](https://storyset.com/)
+- [shields.io](https://shields.io/)
+- [icon-icons](https://icon-icons.com/)
+- [iconfinder](https://www.iconfinder.com/)
+
+<span>Thanks!</span>
+
+<hr>
+<br>
+
 <!-- License -->
 <h2>
-    <span>License</span>
     <img src="https://cdn4.iconfinder.com/data/icons/jetflat-2-multimedia-vol-3/60/0042_049_license_agreement_file_document_paper_page_sheet-512.png" alt="todo list image icon" width="40px" align="center">
+    <span>License</span>
 </h2>
 <p>This project is under the <a href="./LICENSE.txt"> MIT </a> license.</p>
 
 <hr>
 <br>
+
+
 <!-- Author -->
 <h2>
 	<img src="https://cdn1.iconfinder.com/data/icons/office-work-3/200/copywriting-512.png" alt="todo list image icon" width="40px" align="center">
 	<span>Author</span>
 </h2>
 
-
 <br>
+
 <div align="center">
     <img src="./src/main/resources/static/img/readme/profile_circular.png" alt="profile avatar" width="150px">
     <p> <a href="https://github.com/lGabrielDev">Gabriel Freitas</a> 😎</p>

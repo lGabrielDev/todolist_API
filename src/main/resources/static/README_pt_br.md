@@ -338,6 +338,25 @@ Para cada operação, é mostrado todas as possíveis respostas
 <hr>
 <br>
 
+<!-- Credits -->
+<h2>
+    <img src="https://cdn4.iconfinder.com/data/icons/thank-you/256/Artboard_4_copy-512.png" alt="thumbs up icon image" width="40px" align="center">
+    <span>Créditos</span>
+</h2>
+
+<p>As imagens usadas nesse projeto foram retiradas dos seguintes sites:</p>
+
+- [storyset](https://storyset.com/)
+- [shields.io](https://shields.io/)
+- [icon-icons](https://icon-icons.com/)
+- [iconfinder](https://www.iconfinder.com/)
+
+<span>Thanks!</span>
+
+<hr>
+<br>
+
+
 <!-- License -->
 ## <img src="https://cdn4.iconfinder.com/data/icons/jetflat-2-multimedia-vol-3/60/0042_049_license_agreement_file_document_paper_page_sheet-512.png" alt="todo list image icon" width="40px" align="center"> Licença --> MIT
 
